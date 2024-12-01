@@ -15,14 +15,13 @@ def part2():
     dict_occur_numbers = occur_numbers(list2)
 
     cpt = 0
-    for i in range(len(list1)):
+    for number in list1:
         occur_list2 = 0
-        if list1[i] in dict_occur_numbers:
-            occur_list2 = dict_occur_numbers[list1[i]]
+        if number in dict_occur_numbers:
+            occur_list2 = dict_occur_numbers[number]
 
-        cpt += list1[i] * occur_list2
+        cpt += number * occur_list2
     print(cpt)
-
 
 part1()
 part2()
